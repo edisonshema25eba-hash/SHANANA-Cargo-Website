@@ -1,0 +1,54 @@
+.call-to-action {
+  padding-block: clamp(3rem, 7vw, 5.5rem);
+  background-color: var(--color-accent);
+  background-image:
+    linear-gradient(100deg, rgb(185 88 32 / 91%), rgb(16 31 42 / 74%)),
+    url("../Assets/imgi_18_hISAKjsAXQ7S16caa-QgJHykGRXCPKB-5pOCqd9i41z_IsC8GfiII3aek-mEIxYCgk1mUWjD1WrOAj7qRFzRRFIsslYR6NSDPQDXjgwjO4rFSiHG34Vp__5Bgi1nAyevHicMNsfkiakxz9Yl8DjIBGhir10lOPMjcmVl4x_i9E4.jpg");
+  background-position: center;
+  background-size: cover;
+  color: var(--color-paper);
+}
+
+.call-to-action__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+
+.call-to-action__eyebrow {
+  margin-bottom: var(--space-2);
+  color: rgb(255 255 255 / 82%);
+}
+
+.call-to-action h2 {
+  margin: 0;
+  font-size: clamp(2.25rem, 5vw, 3.8rem);
+  letter-spacing: -0.045em;
+  line-height: 1.05;
+}
+
+.call-to-action p:last-child {
+  margin: var(--space-2) 0 0;
+  color: rgb(255 255 255 / 88%);
+}
+
+.button--light {
+  flex: 0 0 auto;
+  gap: 0.65rem;
+  border-color: var(--color-paper);
+  background: var(--color-paper);
+  color: var(--color-ink);
+}
+
+.button--light:hover {
+  border-color: var(--color-surface);
+  background: var(--color-surface);
+}
+
+@media (max-width: 650px) {
+  .call-to-action__inner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
