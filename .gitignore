@@ -1,0 +1,10 @@
+# Keep unrelated existing assets local unless the website uses them.
+Assets/*
+!Assets/flags/
+Assets/flags/*
+!Assets/flags/*.svg
+!Assets/Delivery.jpg.jpeg
+!Assets/WhatsApp Image 2026-11-19 at 2.50.15 PM.jpeg
+!Assets/WhatsApp Image 2026-11-19 at 2.50.17 PM.jpeg
+!Assets/imgi_18_hISAKjsAXQ7S16caa-QgJHykGRXCPKB-5pOCqd9i41z_IsC8GfiII3aek-mEIxYCgk1mUWjD1WrOAj7qRFzRRFIsslYR6NSDPQDXjgwjO4rFSiHG34Vp__5Bgi1nAyevHicMNsfkiakxz9Yl8DjIBGhir10lOPMjcmVl4x_i9E4.jpg
+!Assets/imgi_31__41aI-2nae6WO4skLaisMZN33j-A_ARgYp0svgDOvT3it3oMnHjM6iqjpYwxxMlaCt1X6CrbtxNQ5lVofV7sAzTuiiTQlp1PWDUH8IauHbgk2w1D_OlUbmrUnMRpWNeVlEe3TcI9oB-FhTt57IsqFyQFncPnWJwIhy2snixqxlA.jpg

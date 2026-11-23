@@ -1,0 +1,112 @@
+.site-header {
+  position: relative;
+  z-index: 2;
+  background: var(--color-paper);
+}
+
+.site-header__inner {
+  display: flex;
+  min-height: 5.5rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+
+.brand {
+  color: var(--color-ink);
+  font-size: 1.55rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: clamp(1.25rem, 3vw, 2.5rem);
+}
+
+.site-nav a:not(.button) {
+  color: var(--color-ink);
+  font-size: 0.92rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 180ms ease;
+}
+
+.site-nav a:not(.button):hover {
+  color: var(--color-accent-dark);
+}
+
+.menu-toggle {
+  display: none;
+  width: 2.75rem;
+  height: 2.75rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  border: 1px solid var(--color-border);
+  border-radius: 0.2rem;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  width: 1.2rem;
+  height: 2px;
+  background: currentColor;
+  transition: transform 180ms ease, opacity 180ms ease;
+}
+
+.menu-toggle[aria-expanded="true"] span:first-child {
+  transform: translateY(0.4rem) rotate(45deg);
+}
+
+.menu-toggle[aria-expanded="true"] span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle[aria-expanded="true"] span:last-child {
+  transform: translateY(-0.4rem) rotate(-45deg);
+}
+
+@media (max-width: 760px) {
+  .site-header__inner {
+    position: relative;
+    min-height: 4.75rem;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .site-nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    display: none;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 0;
+    padding: 0.5rem var(--page-gutter) 1.25rem;
+    border-top: 1px solid var(--color-border);
+    background: var(--color-paper);
+    box-shadow: 0 1rem 1.5rem rgb(23 43 58 / 10%);
+  }
+
+  .site-nav.is-open {
+    display: flex;
+  }
+
+  .site-nav a:not(.button) {
+    padding: 0.8rem 0;
+  }
+
+  .site-nav .button {
+    margin-top: 0.6rem;
+  }
+}
